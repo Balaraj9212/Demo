@@ -35,7 +35,14 @@ public class Test {
             System.out.println("Name Not Correct");
         }
 
-        System.out.println("Hii");
+        String ExpectedCopyright = "Copyright ©Motovolt 2025. All rights reserved.";
+        String ActualCopyright = driver.findElement(By.xpath("//div[@class='login-footer']/div[contains(text(),'Copyright')]")).getText();
+        try {Assert.assertEquals(ActualCopyright,ExpectedCopyright);
+            System.out.println("Vesrion Number is Correct");}
+        catch (Exception e) {
+            System.out.println("Vesrion Number is Incorrect");}
+
+
 
 
 
