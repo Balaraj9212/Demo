@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="My Suite">
+    <listeners>
+        <!-- Fully-qualified name of your listener class -->
+        <listener class-name="LoginModule.Listeners"/>
+    </listeners>
+
+    <test name="LoginModule Tests">
+        <classes>
+            <!-- Fully-qualified name of your test class -->
+            <class name="LoginModule.LoginTest"/>
+            <!-- Add more <class> entries here if you have other tests -->
+        </classes>
+    </test>
+</suite>
